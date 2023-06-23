@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>肺动脉高压智能诊断</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/swiper.min.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}"
+          media="screen">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+<!-- loader  -->
+<div class="loader_bg">
+    <div class="loader"><img src="../static/images/loading.gif" alt="#"/></div>
+</div>
+<!-- end loader -->
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="header_to d_none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="lan">
+                            <li><i class="fa fa-globe" aria-hidden="true"></i> 语言 :</li>
+                        </ul>
+                        <form action="#">
+                            <div class="select-box">
+                                <label for="select-box1" class="label select-box1"><span
+                                        class="label-desc">中文</span>
+                                </label>
+                                <select id="select-box1" class="select">
+                                    <option value="Choice 1">English</option>
+                                    <option value="Choice 1">Falkla</option>
+                                    <option value="Choice 2">Germa</option>
+                                    <option value="Choice 3">Neverl</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-sm-6 ">
+                        <ul class="social_icon1">
+                            <li> 关于我们
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_midil">
+            <div class="container">
+                <div class="row d_flex">
+                    <div class="col-md-4 col-sm-4 d_none">
+                        <ul class="conta_icon">
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 联系我们 : +86 xxxxxxxxxxx</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 ">
+                        <a class="logo" href="#"><img src="../static/images/logo.png" alt="#"/></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 d_none">
+                        <ul class="conta_icon ">
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> xxxxxxxxxxxxx</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-7">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarsExample04" aria-controls="navbarsExample04"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html"> 智能检测 </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">关于肺动脉高压</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" url="service" > 诊断建议</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="team.html">团队介绍</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="client.html">研究背景</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html"> 联系我们 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-3 col-sm-5 d_none">
+                        <ul class="sign">
+                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li><a class="sign_btn" href="#">注册个人账号</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+<!-- banner -->
+<section class="banner_main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-7">
+                <div class="text-bg">
+                    <h1>基于多模式超声的<br>肺动脉高压诊断系统</h1>
+                    <span>与你一起守护肺部健康</span>
+                    <p>请根据接下来的提示完成肺动脉高压智能诊断</p>
+                    <div class="col-md-9 col-sm-6">
+                        <div class="about_box">
+                            <a class="read_morea" href="#about">LET'S START <i class="fa fa-angle-right"
+                                                                                aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <div class="ban_img">
+                    <figure><img src="../static/images/ba_ing.png" alt="#"/></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end banner -->
+    <!-- about section -->
+    <div id="about" class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="titlepage">
+                        <h2>请选择您要进行的智能检测</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div id="ho_color1" class="service_box">
+                        <img src="../static/images/service_icon1.png" alt="#"/>
+                        <a href="#check12">图像类型识别 <i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div id="ho_color2" class="service_box">
+                        <img src="../static/images/service_icon6.png" alt="#"/>
+                        <a href="#check12">三尖瓣反流程度分析 <i class="fa fa-angle-right"
+                                                       aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div id="ho_color3" class="service_box">
+                        <img src="../static/images/service_icon4.png" alt="#"/>
+                        <a href="#b0">检测频谱峰值并计算反流压力 <i class="fa fa-angle-right"
+                                                           aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div id="ho_color4" class="service_box">
+                        <img src="../static/images/service_icon5.png" alt="#"/>
+                        <a href="#b0">判断切迹的存在性 <i class="fa fa-angle-right"
+                                                      aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div id="check12" class="col-md-9 col-sm-6">
+                    <!--<div class="about_box">-->
+                    <!--<div class="titlepage">
+                        <h2><strong class="yellow"></strong><br> 请据下方提示完成肺动脉高压智能诊断</h2>
+                    </div>-->
+                    <a class="read_morea" href="#check12">图像类型识别 <i class="fa fa-angle-right"
+                                                                   aria-hidden="true"></i></a>
+                    <a class="read_morea" href="#check12">三尖瓣反流程度分析 <i class="fa fa-angle-right"
+                                                                      aria-hidden="true"></i></a>
+                    <a class="read_morea" href="#b0">检测频谱峰值并计算反流压力差 <i class="fa fa-angle-right"
+                                                                           aria-hidden="true"></i></a>
+                    <a class="read_morea" href="#b0">判断切迹的存在性 <i class="fa fa-angle-right"
+                                                                     aria-hidden="true"></i></a>
+
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!--<h3>请选择图片文件：PNG/JPG/JPEG/SVG/GIF</h3>-->
+<div class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div id="check1" style="float:bottom;">
+                    <h3> 图像类型识别 </h3>
+                    <a href="javascript:;" class="file">选择图片
+                        <input type="file" name="file" id="file0"><br>
+                    </a>
+                    <img src=" " id="img0" style="margin-top:20px;width: 30rem;height: 20rem;">
+                </div>
+                <div style="float:bottom;margin-top:20px;">
+                    <input type="button" id="b0" onclick="test()" value="结果">
+                    <pre id="out0" style="width:320px;height:50px;line-height: 50px;margin-top:15px;"></pre>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div id="check2" style="float:bottom;">
+                    <h3> 三尖瓣反流程度分析 </h3>
+                    <a href="javascript:;" class="file">选择图片
+                        <input type="file" name="file" id="file1"><br>
+                    </a>
+                    <img src=" " id="img1" style="margin-top:20px;width: 30rem;height: 20rem;">
+                </div>
+                <div style="float:bottom;margin-top:20px;">
+                    <input type="button" id="b1" onclick="test1()" value="结果">
+                    <pre id="out1" style="width:320px;height:50px;line-height: 50px;margin-top:15px;"></pre>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div id="check3" style="float:bottom;margin-top: 50px">
+                    <h3> 检测频谱峰值并计算反流压力差 </h3>
+                    <a href="javascript:;" class="file">选择图片
+                        <input type="file" name="file" id="file2"><br>
+                    </a>
+                    <img src=" " id="img2" style="margin-top:20px;width: 30rem;height: 20rem;">
+                </div>
+                <div style="float:bottom;margin-top:20px;">
+                    <input type="button" id="b2" onclick="test2()" value="结果">
+                    <pre id="out2" style="width:320px;height:50px;line-height: 50px;margin-top:15px;"></pre>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div id="check4" style="float:bottom;margin-top: 50px">
+                    <h3> 判断切迹的存在性 </h3>
+                    <a href="javascript:;" class="file">选择图片
+                        <input type="file" name="file" id="file3"><br>
+                    </a>
+                    <img src=" " id="img3" style="margin-top:20px;width: 30rem;height: 20rem;">
+                </div>
+                <div style="float:bottom;margin-top:20px;">
+                    <input type="button" id="b3" onclick="test()" value="结果">
+                    <pre id="out3" style="width:320px;height:50px;line-height: 50px;margin-top:15px;"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("#file0").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取文件信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img0").attr("src", objUrl);
+        }
+    });
+
+    $("#file1").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取文件信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img1").attr("src", objUrl);
+        }
+    });
+
+    $("#file2").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取文件信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img2").attr("src", objUrl);
+        }
+    });
+
+    $("#file3").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取文件信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img3").attr("src", objUrl);
+        }
+    });
+
+    function test() {
+        var fileobj = $("#file0")[0].files[0];
+        console.log(fileobj);
+        var form = new FormData();
+        form.append("file", fileobj);
+        var out0 = '';
+        var flower = '';
+        $.ajax({
+            type: 'POST',
+            url: "predict",
+            data: form,
+            async: false,       //同步执行
+            processData: false, // 告诉jquery要传输data对象
+            contentType: false, //告诉jquery不需要增加请求头对于contentType的设置
+            success: function (arg) {
+                console.log(arg)
+                out0 = arg.result;
+            }, error: function () {
+                console.log("后台处理错误");
+            }
+        });
+
+
+        out0.forEach(e => {
+            flower += `<div style="border-bottom: 1px solid #CCCCCC;line-height: 60px;font-size:16px;">${e}</div>`
+        });
+
+        document.getElementById("out0").innerHTML = flower;
+
+    }
+
+    function test1() {
+        var fileobj = $("#file1")[0].files[0];
+        console.log(fileobj);
+        var form = new FormData();
+        form.append("file", fileobj);
+        var out1 = '';
+        var flower = '';
+        $.ajax({
+            type: 'POST',
+            url: "level",
+            data: form,
+            async: false,       //同步执行
+            processData: false, // 告诉jquery要传输data对象
+            contentType: false, //告诉jquery不需要增加请求头对于contentType的设置
+            success: function (arg) {
+                console.log(arg)
+                out1 = arg.result;
+            }, error: function () {
+                console.log("后台处理错误");
+            }
+        });
+        out1.forEach(e => {
+            flower += `<div style="border-bottom: 1px solid #CCCCCC;line-height: 60px;font-size:16px;">${e}</div>`
+        });
+
+        document.getElementById("out1").innerHTML = flower;
+    }
+
+    function test2() {
+        var fileobj = $("#file2")[0].files[0];
+        console.log(fileobj);
+        var form = new FormData();
+        form.append("file", fileobj);
+        var out2 = '';
+        var flower = '';
+        $.ajax({
+            type: 'POST',
+            url: "pressure",
+            data: form,
+            async: false,       //同步执行
+            processData: false, // 告诉jquery要传输data对象
+            contentType: false, //告诉jquery不需要增加请求头对于contentType的设置
+            success: function (arg) {
+                console.log(arg)
+                out2 = arg.result;
+            }, error: function () {
+                console.log("后台处理错误");
+            }
+        });
+        out2.forEach(e => {
+            flower += `<div style="border-bottom: 1px solid #CCCCCC;line-height: 60px;font-size:16px;">${e}</div>`
+        });
+        $("#img2").attr("src", "../static/images/result.jpg");
+        document.getElementById("out2").innerHTML = flower;
+    }
+
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) {
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+</script>
+<style>
+    .file {
+        position: relative;
+        /*display: inline-block;*/
+        background: #3E5C9A;
+        border: 1px solid #CCC;
+        padding: 4px 4px;
+        overflow: hidden;
+        text-decoration: none;
+        text-indent: 0;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 13px;
+
+    }
+
+    .file input {
+        position: absolute;
+        font-size: 13px;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        border: 1px solid #333;
+        padding: 4px 4px;
+        overflow: hidden;
+        text-indent: 0;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        color: #FFFFFF;
+
+    }
+
+    #b0 {
+        background: #3E5C9A;
+        border: 1px solid #CCC;
+        padding: 4px 10px;
+        overflow: hidden;
+        text-indent: 0;
+        width: 60px;
+        height: 28px;
+        line-height: 20px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 13px;
+    }
+
+    #b1 {
+        background: #3E5C9A;
+        border: 1px solid #CCC;
+        padding: 4px 10px;
+        overflow: hidden;
+        text-indent: 0;
+        width: 60px;
+        height: 28px;
+        line-height: 20px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 13px;
+    }
+
+    #b2 {
+        background: #3E5C9A;
+        border: 1px solid #CCC;
+        padding: 4px 10px;
+        overflow: hidden;
+        text-indent: 0;
+        width: 60px;
+        height: 28px;
+        line-height: 20px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 13px;
+    }
+
+    #b3 {
+        background: #3E5C9A;
+        border: 1px solid #CCC;
+        padding: 4px 10px;
+        overflow: hidden;
+        text-indent: 0;
+        width: 60px;
+        height: 28px;
+        line-height: 20px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 13px;
+    }
+
+    /*.gradient{*/
+
+    /*filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);*/
+    /*-ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);!*IE8*!*/
+    /*background:#1899FF; !* 一些不支持背景渐变的浏览器 *!*/
+    /*background:-moz-linear-gradient(top, #fff, #1899FF);*/
+    /*background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ccc));*/
+    /*background:-o-linear-gradient(top, #fff, #ccc);*/
+    /*}*/
+</style>
+
+<!--<div class="testimonial">
+    <div id="testimo" class="carousel slide testimonial_Carousel " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#testimo" data-slide-to="0" class="active"></li>
+            <li data-target="#testimo" data-slide-to="1"></li>
+            <li data-target="#testimo" data-slide-to="2"></li>
+            <li data-target="#testimo" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="carousel-caption ">
+                        <div class="row">
+                            <div class="service">
+                                <div class="col-md-12">
+                                    <div class="titlepage">
+                                        <h2><br>图像类型识别</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align: left;margin-left:250px;">
+                                <div style="float:bottom;">
+                                    <a href="javascript:;" class="file">选择图片
+                                        <input type="file" name="file" id="file0"><br>
+                                    </a>
+                                    <img src=" " id="img0" style="margin-top:20px;width: 30rem;height: 20rem;">
+                                </div>
+                                <div style="float:top;margin-top:20px;">
+                                    <input type="button" id="b0" onclick="test()" value="结果">
+                                    <pre id="out0"
+                                         style="width:320px;height:50px;line-height: 50px;margin-bottom:100px;"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="service">
+                                <div class="col-md-12">
+                                    <div class="titlepage">
+                                        <h2>三尖瓣反流程度</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align: left;margin-left:180px;">
+                                <div style="float:bottom;">
+
+                                    <a href="javascript:;" class="file">选择图片
+                                        <input type="file" name="file" id="file1"><br>
+                                    </a>
+                                    <img src="" id="img1"
+                                         style="margin-top:20px;width: 30rem;height: 20rem;">
+                                </div>
+                                <div style="float:bottom;margin-top:20px;">
+                                    <input type="button" id="b1" onclick="test2()" value="结果">
+                                    <pre id="out1"
+                                         style="width:320px;height:50px;line-height: 50px;margin-top:20px;"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="service">
+                                <div class="col-md-12">
+                                    <div class="titlepage">
+                                        <h2>判断切迹的存在性</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align: left;margin-left:190px;">
+                                <div style="float:bottom;">
+                                    <a href="javascript:;" class="file">选择图片
+                                        <input type="file" name="file" id="file2"><br>
+                                    </a>
+                                    <img id="img2"
+                                         style="margin-top:20px;width: 30rem;height: 20rem;">
+                                </div>
+                                <div style="float:bottom;margin-top:20px;">
+                                    <input type="button" id="b2" onclick="test()" value="结果">
+                                    <pre id="out2"
+                                         style="width:320px;height:50px;line-height: 50px;margin-top:20px;"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="service">
+                                <div class="col-md-12">
+                                    <div class="titlepage">
+                                        <h2>频谱峰值与压力差</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align: left;margin-left:220px;">
+                                <div style="float:bottom;">
+
+                                    <a href="javascript:;" class="file">选择图片
+                                        <input type="file" name="file" id="file3"><br>
+                                    </a>
+                                    <img id="img3"
+                                         style="margin-top:20px;width: 30rem;height: 20rem;">
+                                </div>
+                                <div style="float:bottom;margin-top:20px;">
+                                    <input type="button" id="b3" onclick="test()" value="结果">
+                                    <pre id="out3"
+                                         style="width:320px;height:50px;line-height: 50px;margin-top:20px;"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimo" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </a>
+        <a class="carousel-control-next" href="#testimo" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>-->
+<!-- about section -->
+<!-- service section -->
+
+<!-- end business  section -->
+<!-- team  section -->
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="logo2" href="#"><img src="../static/images/loogo2.png"
+                                                   alt="#"/></a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <h3>联系我们</h3>
+                    <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker"
+                                           aria-hidden="true"></i></a> 学院路37号
+                            <br>
+                        </li>
+                        <li><a href="#"><i class="fa fa-envelope"
+                                           aria-hidden="true"></i></a>demo@gmail.com<br>
+                        </li>
+                        <li><a href="#"><i class="fa fa-volume-control-phone"
+                                           aria-hidden="true"></i></a>+01
+                            1234567890<br></li>
+                    </ul>
+                    <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"> <i class="fa fa-linkedin"
+                                            aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h3>菜单</h3>
+                    <ul class="link_icon">
+                        <li class="active"><a href="index.html"> 智能检测</a></li>
+                        <li>
+                            <a href="about.html">
+                                </i>关于肺动脉高压
+                            </a>
+                        </li>
+                        <li><a href="service.html"> </i>诊断建议</a>
+                        </li>
+                        <li><a href="team.html"></i>团队介绍</a>
+                        </li>
+                        <li><a href="client.html"></i>研究背景</a>
+                        </li>
+                        <li><a href="contact.html"></i>联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h3>相关通讯</h3>
+                    <form id="request" class="main_form">
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <input class="news" placeholder="Your Email" type="type"
+                                       name="Your Email">
+                            </div>
+                            <div class="col-md-12">
+                                <button class="send_btn">发送</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2020.Company name All rights reserved.<a
+                                target="_blank"
+                                href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+<!-- Javascript files-->
+<!--<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+-->
+<!-- sidebar -->
+<!--<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>-->
+</body>
+
+</html>

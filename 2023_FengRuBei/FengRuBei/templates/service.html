@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>诊断建议</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/swiper.min.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}"
+          media="screen">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="header_to d_none">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                     <ul class="lan">
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> 语言 : </li>
+                     </ul>
+                     <form action="#">
+                        <div class="select-box">
+                           <label for="select-box1" class="label select-box1"><span class="label-desc">中文</span>
+                           </label>
+                           <select id="select-box1" class="select">
+                              <option value="Choice 1">English</option>
+                              <option value="Choice 1">Falkla</option>
+                              <option value="Choice 2">Germa</option>
+                              <option value="Choice 3">Neverl</option>
+                           </select>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-6 col-sm-6 ">
+                     <ul class="social_icon1">
+                        <li> F0llow Us
+                        </li>
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header_midil">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class="col-md-4 col-sm-4 d_none">
+                     <ul class="conta_icon">
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 联系我们 : +86 1234567890</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4 col-sm-4 ">
+                     <a class="logo" href="#"><img src="images/logo.png" alt="#" /></a>
+                  </div>
+                  <div class="col-md-4 col-sm-4 d_none">
+                     <ul class="conta_icon ">
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> demo@gmail.com</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header_bo">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-9 col-sm-7">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html"> 智能检测 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">关于肺动脉高压</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="service.html">诊断建议</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="team.html">团队介绍 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="client.html">研究背景</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html"> 联系我们 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+                  <div class="col-md-3 col-sm-5 d_none">
+                     <ul class="sign">
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a class="sign_btn" href="#">注册个人账号</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+
+   <!-- service section -->
+   <div id="service" class="service">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="titlepage">
+                  <h2><strong class="yellow">诊疗建议</strong><br>现阶段对于肺动脉高压的诊断性检查</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="images/service_icon1.png" alt="#" />
+                  <h3>心脏彩超</h3>
+                  <p>心脏彩超可以检测心脏各房室的大小、瓣膜有无反流、血管有无异常，也可以对肺动脉的压力进行测算，得到肺动脉压力的大概值，了解是否存在肺动脉高压，是一种方便、无创伤的检查方式 </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="images/service_icon2.png" alt="#" />
+                  <h3>CT</h3>
+                  <p>CT 检查出现肺动脉增宽、右室扩大、室间隔平坦时，常提示肺动脉高压</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="images/service_icon3.png" alt="#" />
+                  <h3>核磁共振</h3>
+                  <p>能直接评估心脏各房室的形态、大小、功能，以及血流动力学特征，可以帮助诊断肺动脉高压</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="images/service_icon4.png" alt="#" />
+                  <h3>胸片</h3>
+                  <p>胸片检查时，出现右下肺动脉横径大、外周肺血管丢失，以及右房、右室扩大，常提示患者存在肺动脉高压 </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="images/service_icon5.png" alt="#" />
+                  <h3>右心导管检查</h3>
+                  <p>通过静脉插入导管，将心脏各部位与体表之间连成一个通道，可以在心脏和肺动脉取少量血液，进行血氧分析及压力检测，可直接了解肺动脉压力的情况，以及与其他部位之间的压力差异</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="images/service_icon6.png" alt="#" />
+                  <h3>其他</h3>
+                  <p>除了上述检查外，肺功能检查、多导睡眠监测、血气分析、放射性核素、心电图、肺通气显像等检查均有助于诊断肺动脉高压 </p>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <a class="read_more" href="#">了解更多</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- service section -->
+
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <a class="logo2" href="#"><img src="images/loogo2.png" alt="#" /></a>
+               </div>
+               <div class="col-lg-5 col-md-6 col-sm-6">
+                  <h3>联系我们</h3>
+                  <ul class="location_icon">
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> 学院路37号
+                        <br>
+                     </li>
+                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com<br>
+                     </li>
+                     <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>+01
+                        1234567890<br></li>
+                  </ul>
+                  <ul class="social_icon">
+                     <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                     <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                     <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <h3>菜单</h3>
+                  <ul class="link_icon">
+                     <li> <a href="index.html"> 智能检测</a></li>
+                     <li>
+                        <a href="about.html">
+                           </i>关于肺动脉高压
+                     </li>
+                     <li class="active"> <a href="service.html"> </i>诊断建议</a></li>
+                     <li> <a href="team.html"></i>团队介绍</a></li>
+                     <li> <a href="client.html"></i>研究背景</a></li>
+                     <li> <a href="contact.html"></i>联系我们</a></li>
+                  </ul>
+               </div>
+   
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <h3>相关通讯</h3>
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="news" placeholder="Your Email" type="type" name="Your Email">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">发送</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>Copyright &copy; 2020.Company name All rights reserved.<a target="_blank"
+                           href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+</body>
+
+</html>
